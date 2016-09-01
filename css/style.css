@@ -1,0 +1,348 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/*Fonts*/
+ @font-face {
+     font-family: 'LavanderiaDelicate';
+     src: url('/font/LavanderiaDelicate/LavanderiaDelicate.eot');
+     src: url('/font/LavanderiaDelicate/LavanderiaDelicate.eot') format('embedded-opentype'),
+          url('/font/LavanderiaDelicate/LavanderiaDelicate.woff2') format('woff2'),
+          url('/font/LavanderiaDelicate/LavanderiaDelicate.woff') format('woff'),
+          url('/font/LavanderiaDelicate/LavanderiaDelicate.ttf') format('truetype'),
+          url('/font/LavanderiaDelicate/LavanderiaDelicate.svg#LavanderiaDelicate') format('svg');
+          font-weight: 300;
+ }
+
+ @font-face {
+     font-family: 'Lavanderia';
+     src: url('/font/LavanderiaRegular/LavanderiaRegular.eot');
+     src: url('/font/LavanderiaRegular/LavanderiaRegular.eot') format('embedded-opentype'),
+          url('/font/LavanderiaRegular/LavanderiaRegular.woff2') format('woff2'),
+          url('/font/LavanderiaRegular/LavanderiaRegular.woff') format('woff'),
+          url('/font/LavanderiaRegular/LavanderiaRegular.ttf') format('truetype'),
+          url('/font/LavanderiaRegular/LavanderiaRegular.svg#LavanderiaRegular') format('svg');
+          font-weight: 500;
+ }
+
+ @font-face {
+     font-family: 'lavanderiasturdywebfont';
+     src: url('/font/LavanderiaSturdy/lavanderia-sturdy-webfont.eot');
+     src: url('/font/LavanderiaSturdy/lavanderia-sturdy-webfont.eot') format('embedded-opentype'),
+          url('/font/LavanderiaSturdy/lavanderia-sturdy-webfont.woff2') format('woff2'),
+          url('/font/LavanderiaSturdy/lavanderia-sturdy-webfont.woff') format('woff'),
+          url('/font/LavanderiaSturdy/lavanderia-sturdy-webfont.ttf') format('truetype'),
+          url('/font/LavanderiaSturdy/lavanderia-sturdy-webfont.svg#lavanderiasturdywebfont') format('svg');
+          font-weight: 700;
+ }
+
+ @font-face {
+   font-family: 'Museo';
+   src: url('/font/museo/Museo300-Regular-webfont.eot');
+   src: url('/font/museo300/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/museo300/Museo300-Regular-webfont.woff2') format('woff2'),
+         url('/font/museo300/Museo300-Regular-webfont.woff') format('woff'),
+         url('/font/museo300/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('/font/museo300/Museo300-Regular-webfont.svg#museo300') format('svg');
+         font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Museo';
+    src: url('/font/museo500/Museo500-Regular.eot');
+    src: url('/font/museo500/Museo500-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/font/museo500/Museo500-Regular.woff2') format('woff2'),
+         url('/font/museo500/Museo500-Regular.woff') format('woff'),
+         url('/font/museo500/Museo500-Regular.ttf') format('truetype'),
+         url('/font/museo500/Museo500-Regular.svg#museo500') format('svg');
+         font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Museo';
+    src: url('/font/museo700/Museo700-Regular.eot');
+    src: url('/font/museo700/Museo700-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/font/museo700/Museo700-Regular.woff2') format('woff2'),
+         url('/font/museo700/Museo700-Regular.woff') format('woff'),
+         url('/font/museo700/Museo700-Regular.ttf') format('truetype'),
+         url('/font/museo700/Museo700-Regular.svg#museo700') format('svg');
+         font-weight: 700;
+  }
+
+ /*CSS general*/
+nav ul a,
+nav .brand-logo {
+  color: #020122;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 500px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+  }
+
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  text-align: center;
+}
+/** Costum CSS **/
+
+body{
+  font-family: 'Museo';
+}
+
+/** LOGO **/
+#logo-container{
+  width: 120px;
+  height: 120px;
+}
+
+@media only screen and (max-width: 900px) {
+  #logo-container{
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #logo-container{
+    width: 30%;
+  }
+}
+
+#logoPicture{
+  margin-top: 10px;
+}
+
+#logoSmall{
+  width: 150px;
+  height: 150px;
+  margin-top: -90px !important;
+  margin-left: -100px !important;
+}
+
+/** NAVBAR **/
+ul li{
+  font-family: 'Museo';
+  font-weight: 700;
+}
+
+.top{
+  position: relative;
+  overflow: hidden;
+}
+
+.social {
+  height: 40px;
+  width: 40px;
+}
+
+nav{
+  position: absolute;
+  z-index: 999;
+}
+
+nav ul a:hover {
+  background-color: rgba(170, 161, 200, 0.6);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+nav .button-collapse {
+  color: black;
+}
+/* header photo */
+#hero {
+  background-image:url(/images/foto.jpg);
+  height:100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/*About Session*/
+#about{
+  /*background: #AAA1C8;*/
+  text-align:justify;
+  margin-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Lavanderia';
+  /*font-weight:600;*/
+  color: #020122;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Lavanderia';
+  color: #A7996C;
+}
+.natPicture{
+  margin-top: 40px;
+}
+.about-text{
+  font-size: 16px;
+  text-indent: 25px;
+}
+@media only screen and (min-width: 601px) and (max-width: 801px){
+  .about-text.last{
+    width: 200%;
+  }
+}
+.word{
+  color: #D81E5B;
+  /*background-color: #ffffff;*/
+}
+.spread-love{
+  margin-top: 35px;
+}
+
+/*Services*/
+#services{
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.service-title{
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.icon-list{
+  height: 40px;
+  width: 40px;
+}
+
+.service-text{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.service-text-p{
+  color: #7C6C77;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  tab-indent: 10px;
+  font-weight: 500;
+  text-indent: 25px;
+}
+
+/*More Services*/
+.more-title{
+  font-family: 'lavanderia';
+  margin-bottom: 30px;
+}
+
+.icon-services{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #020122;
+}
+
+.services-list{
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #7C6C77;
+}
+
+.heart{
+  width: 17px;
+  height: 15px;
+}
+
+/*contact*/
+#contactUs{
+  width: 100%;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 30px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.btn{
+  background-color: #D81E5B !important;
+}
+
+.header{
+  top: 0%;
+  margin-bottom: 30px;
+}
+
+.input-field input, .input-field textarea{
+  margin-top: 7px;
+  color: #26A69A;
+}
+
+textarea{
+  line-height: normal;
+}
+
+/*Footer*/
+
+
+.page-footer {
+ margin-top: 20px;
+ padding-top: 20px;
+ margin-bottom: 10px;
+ background-color: #FFFFFF  !important;
+}
+
+
+.icons{
+ width: 20px;
+ height: 20px;
+ margin: 0 5px;
+}
+
+.footer-text{
+  margin-bottom: 40px;
+}
+
+.copyrig {
+ margin-bottom: 5px !important;
+}
